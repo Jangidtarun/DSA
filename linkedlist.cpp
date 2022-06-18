@@ -52,13 +52,18 @@ public:
         }
     }
 
+    void addToTail(int el){
+        tail->next = new sLLNODE(el);
+    }
+
     int deleteFromHead()
     {
         if (isempty())
         {
-            throw invalid_argument("empty list\n");
+            // throw invalid_argument("empty list\n");
             return -1;
         }
+
         int el = head->value;
         sLLNODE *tmp = head;
         if (head == tail)
@@ -73,6 +78,8 @@ public:
         return el;
     }
 
+    
+
 private:
     sLLNODE *head, *tail;
 };
@@ -82,6 +89,7 @@ int main()
     sLL l1;
     l1.addToHead(1);
     l1.addToHead(1999);
+    l1.addToTail(10);
     cout << l1.deleteFromHead() << endl;
     cout << l1.deleteFromHead() << endl;
     cout << l1.deleteFromHead() << endl;
