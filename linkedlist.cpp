@@ -43,20 +43,25 @@ public:
         return head == NULL;
     }
 
-    void addToHead(int el){
-        head = new sLLNODE(el,head);
-        if(tail == 0){
+    void addToHead(int el)
+    {
+        head = new sLLNODE(el, head);
+        if (tail == 0)
+        {
             tail = head;
         }
     }
 
-    int deleteFromHead(){
+    int deleteFromHead()
+    {
         int el = head->value;
         sLLNODE *tmp = head;
-        if(head == tail){
+        if (head == tail)
+        {
             head = tail = 0;
         }
-        else{
+        else
+        {
             head = head->next;
         }
         delete tmp;
@@ -70,8 +75,8 @@ private:
 int main()
 {
     sLL l1;
-    l1.addToHead(10);
     l1.addToHead(1);
+    l1.addToHead(1999);
     cout << l1.deleteFromHead() << endl;
     cout << l1.deleteFromHead() << endl;
     return EXIT_SUCCESS;
