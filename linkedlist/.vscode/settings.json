@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "regex": "cpp",
+        "string": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "shared_mutex": "cpp",
+        "sstream": "cpp",
+        "functional": "cpp",
+        "typeinfo": "cpp",
+        "type_traits": "cpp",
+        "iostream": "cpp"
+    }
+}
