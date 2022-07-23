@@ -1,3 +1,5 @@
+// this is in snake_case.
+
 #include <iostream>
 using namespace std;
 
@@ -6,6 +8,7 @@ class sLLNODE
 public:
     sLLNODE()
     {
+   
         value = 0;
         next = 0;
     }
