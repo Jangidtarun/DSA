@@ -1,4 +1,4 @@
-// this is in snake_case.
+// this is earth day.
 
 #include <iostream>
 using namespace std;
